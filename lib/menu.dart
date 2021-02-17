@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class MenuPage extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,10 +9,13 @@ class MenuPage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.red[800]),
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Go back!'),
+          child: Text('Tillbaka'),
         ),
       ),
     );

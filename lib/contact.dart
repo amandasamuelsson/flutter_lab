@@ -9,10 +9,13 @@ class ContactPage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.red[800]),
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Go back!'),
+          child: Text('Tillbaka'),
         ),
       ),
     );

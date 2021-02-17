@@ -24,33 +24,48 @@ class MyHomePage extends StatelessWidget {
 
   MyHomePage({Key key, this.title}) : super(key: key);
 
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
-      body: Column(children: <Widget>[
-        Image.asset('assets/denmark-01.jpeg'),
-        Text('Välkommen till en unik restaurang',
-            style: TextStyle(fontSize: 24.0)),
-      ]),
+      body: Column(
+        children: <Widget>[
+          Image.asset('assets/denmark-01.jpeg'),
+          Text(
+            'Välkommen till en mysig restaurang',
+            textAlign: TextAlign.center,
+            style: DefaultTextStyle.of(context).style.apply(
+                fontSizeFactor: 0.6,
+                color: Colors.black87,
+                decoration: TextDecoration.none),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            child: Text(
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+              style: TextStyle(fontSize: 16),
+            ),
+          ),
+        ],
+      ),
       drawer: Drawer(
-        // Add a ListView to the drawer. This ensures the user can scroll
-        // through the options in the drawer if there isn't enough vertical
-        // space to fit everything.
         child: ListView(
-          // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
               child: Image(
-                  image: NetworkImage(
-                      'http://danskengbg.se/content/themes/bliss/img/logo.png')),
+                image: NetworkImage(
+                  'http://danskengbg.se/content/themes/bliss/img/logo.png',
+                ),
+              ),
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
             ),
             ListTile(
-              title: Text('Våran meny'),
+              title: Text(
+                'Våran meny',
+                style: TextStyle(fontSize: 20.0),
+              ),
               onTap: () {
                 Navigator.push(
                   context,
@@ -59,7 +74,7 @@ class MyHomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Kontakta oss'),
+              title: Text('Kontakta oss', style: TextStyle(fontSize: 20.0)),
               onTap: () {
                 Navigator.push(
                   context,
