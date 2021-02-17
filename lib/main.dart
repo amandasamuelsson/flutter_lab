@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './contact.dart';
+import './menu.dart';
 
 void main() => runApp(MyApp());
 
@@ -50,19 +52,19 @@ class MyHomePage extends StatelessWidget {
             ListTile(
               title: Text('Våran meny'),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MenuPage()),
+                );
               },
             ),
             ListTile(
               title: Text('Kontakta oss'),
               onTap: () {
-                // Update the state of the app
-                // ...
-                // Then close the drawer
-                Navigator.pop(context, '/a');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ContactPage()),
+                );
               },
             ),
           ],
