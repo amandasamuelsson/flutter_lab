@@ -1,16 +1,30 @@
-# flutter_lab
+# Flutter
+## Inlämningsuppgift - presentera ett ramverk 
 
-A new Flutter project.
 
-## Getting Started
+# Flutter Setup & Notes
+## 1. Download SDK
+Download Flutter SDK, extract the "Flutter" folder and put somewhere on your machine https://flutter.dev/docs/get-started/install
 
-This project is a starting point for a Flutter application.
+## 2. Add path
+Add path for 'location/flutter/bin'
 
-A few resources to get you started if this is your first Flutter project:
+## 3. Check dependencies
+flutter doctor
+## 4. Install Xcode (Mac)
+https://developer.apple.com/xcode/
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 5. Configure Xcode command line tools (Mac)
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -runFirstLaunch
+## 6. Test iOS Simulator (Mac)
+open -a Simulator
+## 7. Install Android Studio
+https://developer.android.com/studio
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 8. Install Flutter plugin
+## 9. Create virtual device from AVD manager
+## 10. Install VSCode Flutter extension
+## 11. Open the project
+## 12. Run Debugger in VSCode
+You should now be able to chose your emulator of choice and view the app. 
