@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   final String title;
-
   MyHomePage({Key key, this.title}) : super(key: key);
 
   Widget build(BuildContext context) {
@@ -63,7 +62,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ListTile(
               title: Text(
-                'Våran meny',
+                'Vår meny',
                 style: TextStyle(fontSize: 20.0),
               ),
               onTap: () {
