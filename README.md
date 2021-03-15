@@ -28,3 +28,4 @@ https://developer.android.com/studio
 ## 11. Open the project
 ## 12. Run Debugger in VSCode
 You should now be able to chose your emulator of choice and view the app. 
+This app is developed for iOS.
